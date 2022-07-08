@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DetailProduitActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+        android:background="@android:color/transparent"
+        android:layout_gravity="start"
+
+        android:contentDescription="@string/close"
+        android:layout_weight="1"
+        android:id="@+id/back_btn"
+        android:layout_marginTop="60dp"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.15"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:cardBackgroundColor="@color/bleu"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/detail_produit_image_iv"
+                    android:layout_margin="3dp"
+
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg"
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/noir"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:id="@+id/detail_produit_nom_tv"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/noir"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:id="@+id/detail_produit_desc_tv"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/rouge"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="20dp"
+        android:id="@+id/detail_produit_prix_tv"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".85"
+        android:background="@drawable/rounded_button"
+        android:text="@string/ajouter_panier"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+
+        android:id="@+id/detail_produit_ajt_btn"
+
+        />
+
+</LinearLayout>

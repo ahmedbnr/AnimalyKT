@@ -1,0 +1,97 @@
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="170dp"
+        android:layout_height="240dp"
+        android:layout_margin="10dp"
+
+        app:cardCornerRadius="10dp"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/bg"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/img_produit"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_close_white_24"
+                    android:layout_gravity="end"
+                    android:id="@+id/produit_delete"
+                    android:backgroundTint="@color/blanc"
+                    android:layout_margin="5dp"
+
+
+                    />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/noir"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/nom_produit"
+                android:fontFamily="@font/poppins_medium"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@+id/item_layout"
+                android:layout_gravity="center"
+                android:padding="10dp"
+
+
+
+                >
+                <TextView
+                    android:id="@+id/prix_produit"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.85"
+                    android:layout_height="match_parent"
+                    android:gravity="start|center_vertical"
+                    android:textSize="18sp"
+                    android:textColor="@color/vert"
+
+
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.15"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_baseline_shopping_basket_green_24"
+                    android:layout_gravity="center"
+
+                    android:id="@+id/add_panier_produit"
+                    android:backgroundTint="@color/vert"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+

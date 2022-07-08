@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.search.SearchFragment"
+
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        android:textColor="@color/vert"
+        android:text="@string/title_search"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/poppins_semibold"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:inputType="textShortMessage"
+        android:imeOptions="actionSearch"
+        android:id="@+id/search_et"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/noir"
+            android:text="@string/historique"
+            android:gravity="start|center_vertical"
+            android:fontFamily="@font/poppins_semibold"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/vert"
+            android:text="@string/réinitialiser"
+            android:gravity="end|center_vertical"
+            android:id="@+id/reset_tv"
+            android:fontFamily="@font/poppins_semibold"
+
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:id="@+id/categorie_rv"
+        android:layoutDirection="rtl"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/produit_rv"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:text="@string/mes_produits"
+            android:textColor="@color/blanc"
+            android:textSize="18sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+
+            android:id="@+id/mes_produits_btn"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+
+</ScrollView>

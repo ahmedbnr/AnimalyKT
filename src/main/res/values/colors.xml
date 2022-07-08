@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/vert</color>
+    <color name="colorPrimaryDark">@color/vert</color>
+    <color name="colorAccent">@color/noir</color>
+
+    <color name="vert">#00DDC4</color>
+    <color name="blanc">#FFFFFF</color>
+    <color name="noir">#000000</color>
+    <color name="gris">#808080</color>
+    <color name="gris_medium">#B1B1B1</color>
+    <color name="gris_light">#E4E4E4</color>
+    <color name="orange">#FF9800</color>
+    <color name="rouge">#FF0000</color>
+    <color name="bleu">#1891F1</color>
+
+</resources>

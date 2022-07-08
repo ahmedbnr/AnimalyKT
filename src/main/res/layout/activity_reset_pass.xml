@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.ResetPassActivity"
+
+    >
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+        android:background="@android:color/transparent"
+        android:layout_gravity="start"
+
+        android:contentDescription="@string/close"
+        android:layout_weight="1"
+
+        android:id="@+id/back_btn"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fontFamily="@font/bebasneue_regular"
+        android:textSize="35sp"
+        android:textAllCaps="true"
+        android:text="@string/changer_mdp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/noir"
+        android:layout_weight="1"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textSize="13sp"
+            android:textColor="@color/vert"
+            android:text="@string/ancien_mdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/ancien_mdp_et"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/ancien_mdp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+
+            android:inputType="textPassword"
+            android:importantForAutofill="no" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textSize="13sp"
+            android:textColor="@color/vert"
+            android:text="@string/new_mdp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/new_mdp_et"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/new_mdp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+
+            android:inputType="textPassword"
+            android:importantForAutofill="no" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textSize="13sp"
+            android:textColor="@color/vert"
+            android:text="@string/confirm_mdp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/confirm_mdp_et"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/confirm_mdp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+
+            android:inputType="textPassword"
+            android:importantForAutofill="no" />
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="50dp"
+            android:text="@string/changer_mdp"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+
+            android:id="@+id/change_pass_btn"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

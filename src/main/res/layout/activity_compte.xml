@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.CompteActivity"
+
+    >
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+        android:background="@android:color/transparent"
+        android:layout_gravity="start"
+
+        android:contentDescription="@string/close"
+        android:layout_weight="1"
+        android:id="@+id/back_btn"
+
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebasneue_regular"
+            android:textSize="35sp"
+            android:textAllCaps="true"
+            android:text="@string/compte_profil"
+            android:textColor="@color/noir"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:text="@string/supprimer_compte"
+            android:textColor="@color/rouge"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/ic_outline_delete_forever_24"
+            android:layout_marginTop="15dp"
+
+            android:id="@+id/delete_account_btn"
+
+
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        >
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textSize="13sp"
+                android:textColor="@color/vert"
+                android:text="@string/prenom"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textSize="13sp"
+                android:textColor="@color/vert"
+                android:text="@string/nom"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="40dp"
+                android:id="@+id/prenom_et"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/prenom"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="textEmailAddress"
+                android:importantForAutofill="no" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="40dp"
+                android:id="@+id/nom_et"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/nom"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginStart="10dp"
+
+                android:inputType="textEmailAddress"
+                android:importantForAutofill="no" />
+
+        </GridLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textSize="13sp"
+            android:textColor="@color/vert"
+            android:text="@string/email"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/email_et"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/email"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_marginBottom="50dp"
+
+            android:inputType="textEmailAddress"
+            android:importantForAutofill="no" />
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="50dp"
+            android:text="@string/maj"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+
+            android:id="@+id/maj_btn"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

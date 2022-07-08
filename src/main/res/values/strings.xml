@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Animaly</string>
+
+    <string name="nom_prenom">Nom et prénom</string>
+    <string name="email">Email</string>
+    <string name="telephone">Téléphone</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="connexion">Connexion</string>
+    <string name="inscription">Inscription</string>
+    <string name="deja_compte">Vous avez déjà un compte? </string>
+    <string name="tun_number">+216</string>
+    <string name="close">Close</string>
+    <string name="pas_compte">Vous n\'avez pas de compte? </string>
+    <string name="s_inscrire">S\'inscrire</string>
+    <string name="mdp_oublie">Mot de passe oublié</string>
+    <string name="animaly_shop">Animaly shop</string>
+    <string name="animaly_tinder">Animaly tinder</string>
+
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Acceuil</string>
+    <string name="title_search">Recherche</string>
+    <string name="title_basket">Panier</string>
+    <string name="title_favorite">Favoris</string>
+    <string name="title_profil">Profil</string>
+
+    <string name="compte_profil">Compte et profil</string>
+    <string name="paiement">Paiement</string>
+    <string name="adresses">Gérer les adresses</string>
+    <string name="reset_mdp">Réinitialisation de mot de passe</string>
+    <string name="logout">Se déconnecter</string>
+
+    <string name="nom">Nom</string>
+    <string name="prenom">Prénom</string>
+    <string name="maj">Mettre à jour</string>
+    <string name="supprimer_compte">Supprimer le compte</string>
+
+    <string name="changer_mdp">Changer le mot de passe</string>
+    <string name="ancien_mdp">Ancien mot de passe</string>
+    <string name="new_mdp">Nouveau mot de passe</string>
+    <string name="confirm_mdp">Confirmer le mot de passe</string>
+    <string name="historique_cmd">Historique des commandes</string>
+    <string name="categorie">Categories</string>
+    <string name="voir_panier">Voir panier</string>
+    <string name="dt">DT</string>
+    <string name="panier">Panier</string>
+
+    <string name="champ_vide">Le champ ne doit pas être vide!</string>
+    <string name="token">token</string>
+    <string name="cin">cin</string>
+    <string name="adresse">adresse</string>
+
+    <string name="user">user</string>
+    <string name="search_preference_file_key">historique_recherche</string>
+
+    <string name="historique">Historique</string>
+    <string name="réinitialiser">réinitialiser</string>
+    <string name="mes_produits">Mes produits</string>
+    <string name="ajouter_produit">Ajouter un produit</string>
+
+    <string name="produit_delete_confirm_msg">Voulez-vous vraiment supprimer ce produit ?</string>
+    <string name="oui">Oui</string>
+    <string name="non">Non</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titre">Titre</string>
+    <string name="prix">Prix</string>
+    <string name="image">Image</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="annuler">Annuler</string>
+    <string name="selectionner_image">Selectionner une image</string>
+    <string name="camera">Camera</string>
+    <string name="galerie">Galerie</string>
+    <string name="aucune_image">Aucune image sélectionnée</string>
+    <string name="aucun_changement">Aucun changement n\'a été effectué</string>
+    <string name="changer">Changer</string>
+    <string name="fermer">Fermer</string>
+    <string name="delete_account">Voulez-vous vraiment supprimer votre compte ?</string>
+    <string name="ajouter_panier">Ajouter au panier</string>
+    <string name="description">Description</string>
+    <string name="pas_desc">Aucune description trouvée</string>
+
+</resources>

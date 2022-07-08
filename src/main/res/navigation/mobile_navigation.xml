@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.animaly.activities.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_searchFragment"
+            app:destination="@id/navigation_search" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_profil"
+        android:name="com.example.animaly.activities.ui.profil.ProfilFragment"
+        android:label="@string/title_profil"
+        tools:layout="@layout/fragment_profil" />
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.animaly.activities.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_favoris">
+        <action
+            android:id="@+id/action_searchFragment_to_panierFragment"
+            app:destination="@id/navigation_panier" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_favoris"
+        android:name="com.example.animaly.activities.ui.favoris.FavorisFragment"
+        android:label="@string/title_favorite"
+        tools:layout="@layout/fragment_favoris">
+        <action
+            android:id="@+id/action_favorisFragment_to_profilFragment"
+            app:destination="@id/navigation_profil" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_panier"
+        android:name="com.example.animaly.activities.ui.panier.PanierFragment"
+        android:label="@string/title_basket"
+        tools:layout="@layout/fragment_panier">
+        <action
+            android:id="@+id/action_panierFragment_to_favorisFragment"
+            app:destination="@id/navigation_favoris"
+            />
+    </fragment>
+
+</navigation>

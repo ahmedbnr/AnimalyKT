@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.profil.ProfilFragment"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:animateLayoutChanges="true"
+
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fullScreenLayout"
+        android:visibility="gone"
+        android:layout_marginBottom="35dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:src="@drawable/ic_baseline_exit_to_app_24"
+                android:id="@+id/full_screen_picture_iv"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_button"
+                        android:text="@string/changer"
+                        android:textAllCaps="true"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+
+                        android:id="@+id/change_picture_btn"
+
+                        />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext"
+                        android:text="@string/fermer"
+                        android:textAllCaps="true"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/noir"
+
+                        android:id="@+id/close_picture_btn"
+
+                        />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="250dp"
+            app:cardBackgroundColor="@color/vert"
+            android:layout_gravity="center"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="250dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_baseline_person_outline_24"
+                    android:id="@+id/profile_picture_iv"
+                    android:scaleType="centerCrop"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/noir"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/nom_prenom_tv"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_outline_edit_24"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/compte_profil"
+        android:textColor="@color/noir"
+        android:textSize="15sp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/compte_profil_btn"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_outline_account_balance_wallet_24"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/paiement"
+        android:textColor="@color/noir"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_outline_place_24"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/adresses"
+        android:textColor="@color/noir"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_baseline_history_24"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/historique_cmd"
+        android:textColor="@color/noir"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/historique_commande_btn"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_outline_bug_report_24"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/reset_mdp"
+        android:textColor="@color/noir"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/reset_pass_btn"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/ic_baseline_exit_to_app_24"
+            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:drawablePadding="10dp"
+            android:gravity="start|center_vertical"
+            android:text="@string/logout"
+            android:textColor="@color/noir"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+
+            android:id="@+id/deconnecter_btn"
+
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>
